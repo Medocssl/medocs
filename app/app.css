@@ -1,23 +1,23 @@
-* {
-  box-sizing: border-box;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* 🎨 CHANGE THIS: These are your brand colors */
+  /* Deep Medical Blue & Clean White */
+  --medocs-primary: #004680; 
+  --medocs-secondary: #00a0e3;
+  --medocs-bg: #f8fafc;
+  --medocs-text: #1e293b;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; /* Prevents horizontal scrolling on mobile */
+  background-color: var(--medocs-bg);
+  color: var(--medocs-text);
+  font-family: 'Inter', sans-serif; /* Clean, modern font */
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Smooth transition for links */
-a {
-  transition: opacity 0.2s;
-}
-
-a:hover {
-  opacity: 0.8;
+/* Smooth scrolling for the whole site */
+html {
+  scroll-behavior: smooth;
 }
