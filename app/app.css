@@ -1,47 +1,19 @@
-:root {
-  --primary: #012a4a; /* Dark Navy from your logo */
-  --secondary: #00a8cc; /* Teal/Cyan from your logo */
-  --white: #ffffff;
-  --gray: #f4f7f6;
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Page entrance transition */
-.page-fade {
-  animation: fadeIn 0.8s ease-out forwards;
+.nav-link:hover {
+  color: #00a8cc !important;
+}
+
+/* Page entrance animation */
+main {
+  animation: fadeIn 0.6s ease-in;
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(15px); }
-  to { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
-
-/* Scroll reveal class (Interactive) */
-.reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s ease-out;
-}
-
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.nav-link {
-  position: relative;
-  text-decoration: none;
-  color: var(--primary);
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.nav-link::after {
-  content: '';
-  position: absolute;
-  width: 0; height: 2px;
-  bottom: -4px; left: 0;
-  background-color: var(--secondary);
-  transition: 0.3s;
-}
-
-.nav-link:hover::after { width: 100%; }
