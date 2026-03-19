@@ -15,18 +15,18 @@ export default function App() {
           boxShadow: '0 2px 10px rgba(0,0,0,0.05)'
         }}>
           <Link to="/">
-            {/* Exactly matching your logo filename */}
-            <img src="/Medocs logo full new.jpg" alt="MEDOCS Logo" style={{ height: '60px' }} />
+            {/* Using the exact name from your upload */}
+            <img src="/Medocs logo full new.jpg" alt="MEDOCS" style={{ height: '60px' }} />
           </Link>
           
-          <div style={{ display: 'flex', gap: '25px', alignItems: 'center' }}>
-            <Link to="/" className="nav-link">Home</Link>
-            <Link to="/about" className="nav-link">About</Link>
+          <div style={{ display: 'flex', gap: '20px' }}>
+            <Link to="/" style={{ textDecoration: 'none', color: '#012a4a', fontWeight: 'bold' }}>Home</Link>
+            <Link to="/about" style={{ textDecoration: 'none', color: '#012a4a', fontWeight: 'bold' }}>About</Link>
             <Link to="/contact" style={{ 
-              background: '#012a4a', color: 'white', padding: '10px 20px', 
-              borderRadius: '4px', textDecoration: 'none', fontWeight: 'bold' 
+              background: '#012a4a', color: 'white', padding: '8px 15px', 
+              borderRadius: '4px', textDecoration: 'none' 
             }}>
-              Hotline: 0770 118 118
+              0770 118 118
             </Link>
           </div>
         </nav>
