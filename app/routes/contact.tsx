@@ -5,7 +5,7 @@ export default function Contact() {
     <div style={{ padding: '40px', textAlign: 'center', fontFamily: 'sans-serif' }}>
       <h1>Contact Us</h1>
       <div style={{ border: '2px solid #004a99', display: 'inline-block', padding: '30px', borderRadius: '15px' }}>
-        <h2>📞 Hotline: [Your Number]</h2>
+        <h2>📞 Hotline: 0770 118 118 </h2>
         <p>📧 Email: info@medocs.lk</p>
         <p>📍 Location: Colombo, Sri Lanka</p>
         <div style={{ marginTop: '20px' }}>
